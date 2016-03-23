@@ -2,16 +2,40 @@
 
 var Chatty = (function() {
 
+  let chatBox = document.getElementById("chatbox");
+  let clearButton = document.getElementById("clear-messages");
+
   Chatty.loadStarterPack(Chatty.getStarterPack);
     
-})(Chatty || {});
 
- let box = document.getElementById("chatbox");
+
+ 
  let check = document.getElementById("dark");
 
  check.addEventListener("click", function(){
     if(check.checked)
-    box.classList.add("theme");
-    else if(check.checked === false)
-    box.classList.remove("theme");
+    chatBox.classList.add("theme");
+    else if(check.checked === false);
+    chatBox.classList.remove("theme");
  });
+
+  Chatty.clearAllMessages = function (e) {
+    clearButton.addEventListener("click", function (e) {
+      chatBox.innerHTML = "";
+      if (chatBox.innerHTML = "") {
+      clearButton[0].setAttribute("disabled", true);
+    };
+    });
+  };
+
+  Chatty.clearAllMessages();
+
+  // Chatty.disableClearButton = function () {
+  //   if (chatBox.innerHTML = "") {
+  //     clearButton[0].setAttribute("disabled", true);
+  //   };
+  // }
+
+  // Chatty.disableClearButton();
+
+})(Chatty || {});
