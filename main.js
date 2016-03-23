@@ -5,8 +5,7 @@ var Chatty = (function() {
   let chatBox = document.getElementById("chatbox");
   let clearButton = document.getElementById("clear-messages");
 
-  Chatty.loadStarterPack(Chatty.getStarterPack);
-    
+  Chatty.loadStarterPack(Chatty.getStarterPack);    
 
 
  
