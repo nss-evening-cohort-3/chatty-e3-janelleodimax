@@ -12,3 +12,8 @@ body {
 h4 {
   text-align: center;
 }
+
+.theme {
+	background-color: darkgray; 
+	color: ivory;
+}
