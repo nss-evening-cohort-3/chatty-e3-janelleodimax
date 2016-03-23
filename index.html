@@ -16,8 +16,8 @@
         <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-send" aria-
 hidden="true"></span> Chatty!</a>
       </div>
-      <form class="navbar-form navbar-left form-horizontal">
-          <input type="text" class="form-control" placeholder="Enter message">
+      <form class="navbar-form navbar-left form-horizontal" onsubmit="return false">
+          <input type="text" id="text-area" class="form-control" placeholder="Enter message">
           <button type="button" class="btn btn-default" id="clear-messages">Clear Messages</button>
       </form>
     </div>
@@ -45,7 +45,10 @@ hidden="true"></span> Chatty!</a>
   </div>
 
 <script type="text/javascript" src="xhr.js"></script>
+<script type="text/javascript" src="disassemble.js"></script>
+<script type="text/javascript" src="rebuilding.js"></script>
 <script type="text/javascript" src="main.js"></script>
+
 
 
 </body>
