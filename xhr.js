@@ -2,12 +2,10 @@
 
 var Chatty = (function(originalChatty) {
 
-  let chatBox = document.getElementById("chatbox");
-  let starterPack;
-
   originalChatty.getStarterPack = function () {
     let starterPack = [];
     starterPack = JSON.parse(this.responseText);
+      
     originalChatty.starterPackToDOM(starterPack.conversations);
     originalChatty.deleteAMessage();
     originalChatty.inputGetter();
@@ -28,7 +26,10 @@ var Chatty = (function(originalChatty) {
       buildString += `${starterPack[i].subject}  `;
       buildString += `<button id='delete'>Delete</button></p>`;
       chatbox.innerHTML += buildString;
+      messageArray.push(starterPack[i]);
     };
+    console.log("messageArray", messageArray);
+      
   }
   
   return originalChatty;
