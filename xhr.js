@@ -1,4 +1,4 @@
-"use strict";
+use strict";
 
 var Chatty = (function(originalChatty) {
 
@@ -22,7 +22,7 @@ var Chatty = (function(originalChatty) {
   originalChatty.starterPackToDOM = function (starterPack) {
     for (let i = 0; i < starterPack.length; i++) {
       let buildString = "";
-      buildString += `<p>&nbsp&nbsp<strong>${starterPack[i].screename}:</strong>  `;
+      buildString += `<p id="${starterPack[i].id}">&nbsp&nbsp<strong>${starterPack[i].screename}:</strong>  `;
       buildString += `${starterPack[i].subject}  `;
       buildString += `<button id='delete'>Delete</button></p>`;
       chatbox.innerHTML += buildString;
