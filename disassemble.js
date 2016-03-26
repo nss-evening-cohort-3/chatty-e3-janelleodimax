@@ -2,6 +2,7 @@
 
 var Chatty = (function(originalChatty) {
 
+  //delete method developed to target each message individually
   originalChatty.messageDeleter = function (e) {
     if (e.target.id === "delete") {
       let toDelete = e.target.parentNode;

@@ -2,7 +2,9 @@
 
 var Chatty = (function(originalChatty) {
   
+//user message input function
   originalChatty.inputGetter = function () {
+//event listener for the user to input the message
     userInputField.addEventListener("keydown", function (e) {
       if (e.which === 13) {
         let userMessage = userInputField.value;         
@@ -12,6 +14,8 @@ var Chatty = (function(originalChatty) {
       };
     });  
   },
+
+  //building the string of what the usermessage would look like with the username as Monkeybutt
 
   originalChatty.userMessageToDOM = function (userMessage) {
     let buildString = "";
@@ -25,6 +29,7 @@ var Chatty = (function(originalChatty) {
         
   },
 
+  //delete single message function
   originalChatty.deleteAMessage = function () {
     chatBox.addEventListener("click", function(e) {
       originalChatty.messageDeleter(e);
