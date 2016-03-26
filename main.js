@@ -1,5 +1,6 @@
 "use strict";
 
+//variables set here
 let messageArray = [];
 let chatBox = document.getElementById("chatbox");
 let clearButton = document.getElementById("clear-messages");
@@ -8,6 +9,7 @@ let id = 5;
 
 var Chatty = (function() {
 
+//loading the chatbox up
   Chatty.loadStarterPack(Chatty.getStarterPack);
 
   Chatty.clearAllMessages = function (e) {

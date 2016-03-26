@@ -11,6 +11,7 @@ var Chatty = (function(originalChatty) {
     originalChatty.inputGetter();
   },
 
+ //request to call JSON
   originalChatty.loadStarterPack = function (callback) {
     let packLoader = new XMLHttpRequest();
 
