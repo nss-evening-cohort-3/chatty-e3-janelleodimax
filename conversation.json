@@ -1,34 +1,30 @@
 {
   "conversations": [
     {
+      "id": 0,
       "screename": "BakedFrogLegs",
-      "subject": "Hey, what time is the event?",
-      "emoticon": false,
-      "time": "11:00 AM"
+      "subject": "Hey, what time is the event?"
     },
     {
+      "id": 1,
       "screename": "InsuranceSeller",
-      "subject": "No idea.",
-      "emoticon": false,
-      "time": "11:14 AM"
+      "subject": "No idea."
     },
      {
+      "id": 2,
       "screename": "CreepyStranger",
-      "subject": "It is at 8 o'clock!",
-      "emoticon": ":)",
-      "time": "1:31 PM"
+      "subject": "It is at 8 o'clock!"
     }, 
     {
+      "id": 3,
       "screename": "defaultScreename14",
-      "subject": "But I thought it wasn't until 8:30?",
-      "emoticon": false,
-      "time": "4:32 PM"
+      "subject": "But I thought it wasn't until 8:30?"
+
     }, 
     {
+      "id": 4,
       "screename": "IDontWantAScreename",
-      "subject": "Yeah, the parade of eating pears is at 8!",
-      "emoticon": false,
-      "time": "4:35 PM"
+      "subject": "Yeah, the parade of eating pears is at 8!"
     }
   ]
 }
